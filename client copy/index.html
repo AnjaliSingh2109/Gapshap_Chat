@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gapshap</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="brand">
+        <h1>Gapshap</h1>
+    </div>
+    <section class="chat_section">
+        <div class="left_side">
+            <div class="side_img">
+                <img src="pic2.jpg">
+            </div>
+        </div>
+        <div class="msg">
+            <div class="message_area" id="messageArea">
+                <!-- Messages will be dynamically added here -->
+            </div>
+            <div class="sticky-footer">
+                <textarea type="text" id="dataInput" cols="30" rows="1" placeholder="Type Your Message"></textarea>
+                <button class="btnn" id="sendButton">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Socket.IO and custom JavaScript -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./client.js"></script>
+</body>
+</html>

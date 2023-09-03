@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    /* box-sizing:border-box; */
+}
+
+body{
+    min-height:100vh;
+}
+
+/* section */
+.chat_section{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    box-shadow: 2px 2px 5px 5px gray;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chat_section img{
+    padding-top: 30px;
+}
+.msg::-webkit-scrollbar{
+    display: none;
+}
+.side_img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.side_img img{
+    height: 20rem;
+    width: 28rem;
+}
+.msg{
+    overflow-y: scroll;
+    float:right;
+    width:1100px;
+    height:88vh;
+    padding: 1.5rem 0.5rem 0rem 0.5rem;
+    border-left: 2px solid #bfb9b9;
+}
+
+.brand{
+    padding:20px;
+    background: #F8F8F8;
+    display: flex;
+    align-items:center;
+}
+
+.brand h1{
+    text-transform:uppercase;
+    font-size:20px;
+    /*color:rgb(226, 92, 119);*/
+    color:#151212;
+    margin-left:10px;
+}
+
+.message_area{
+    /* height:500px; */
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+    overflow-y:auto;
+    /* padding-top:40px; */
+}
+
+textarea{
+    width: 70%;
+    border:none;
+    padding:20px;
+    font-size:16px;
+    outline:none;
+    background:#F8F8F8;
+    margin-top: auto;
+    margin-left: 20px;
+    border-radius: 30px;
+}
+
+.btnn{
+    border: 0.5px solid #b4b4b4;
+    margin-left: 16px;
+    font-size: 17px;
+    padding: 10px 30px;
+    color: white;
+    background: #6f85de;
+    border-radius: 38px;
+    font-weight: 600;
+}
+
+.message{
+    padding:20px;
+    border-radius:4px;
+    margin-bottom:40px;
+    max-width:300px;
+    position:relative;
+}
+
+.incoming{
+    background: rgb(240, 163, 178);
+    color:white;
+}
+
+.outgoing{
+    background: rgb(206, 194, 194);
+    color:white;
+    margin-left:auto;
+}
+
+.message h4{
+    position:absolute;
+    top:-20px;
+    left:0px;
+    color:#333;
+    font-size: 18px;
+}
+
+.sticky-footer{
+    width: 80%;
+    display: flex;
+    position: fixed;
+    top: 42rem;
+    justify-content: flex-start;
+}
+
+@media(max-width:600px){
+    body{
+        width:100vw;
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+        overflow:hidden;
+    }
+    /* section .chat_section{
+        
+    } */
+    .chat_section .brand{
+        min-width: 100%;
+        max-width:100%;
+    }
+    textarea{
+        width:95%;
+        margin-left: 5%;
+    }
+
+    .chat_section img{
+        display:none;
+    }
+
+    .message{
+        min-width:30%;
+        max-width:70%;
+    }
+
+    .incoming{
+        float:right;
+    }
+}
